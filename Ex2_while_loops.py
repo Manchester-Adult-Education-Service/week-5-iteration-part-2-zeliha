@@ -49,6 +49,10 @@ print("-------------------------------------------\n"
 #     number = number + 1
 #
 # Write your code below:
+count = 1
+while count <= 5:
+    print(count)
+    count = count +1
 
 
 # -------------------------------------------
@@ -84,6 +88,11 @@ print("-------------------------------------------\n"
 #     something = input("Type again: ")
 #
 # Write your code below:
+user = input("Write a word! ")
+while user != "stop":
+    print("You typed" , user) # an infinite loop 
+    user = input("Write a word: ")
+
 
 
 # -------------------------------------------
@@ -118,6 +127,14 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+
+number = int(input("Give a number between 1 and 10: "))
+
+while number < 1 or number > 10:
+    number = int(input("Try again! Give a number between 1 and 10: "))
+
+print("Thank you!")
+   
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -156,6 +173,12 @@ print("-------------------------------------------\n"
 #     something = something - 1
 
 # Write your code below:
+count = 10
+while count > 0:
+    print(count)
+    count = count - 1
+
+print("Liftoff!")
 
 
 # -------------------------------------------
@@ -185,6 +208,13 @@ print("-------------------------------------------\n"
 
 # Write your code below:
 
+correct_password = "123zeliha"
+ask_password = input("Write your password.")
+while ask_password != correct_password:
+    print("Try again") 
+    ask_password = input("Write your password.")
+
+print("Access granted")
 
 # -------------------------------------------
 # SWAP COMPUTERS
