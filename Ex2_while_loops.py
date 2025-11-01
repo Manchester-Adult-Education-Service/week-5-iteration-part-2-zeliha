@@ -242,6 +242,12 @@ print("-------------------------------------------\n"
 #     total = total + num
 
 # Write your code below:
+total = 0
+while total<=50:
+    numbers = int(input("Write a number:" ))
+    total = total + numbers
+print ("your total is" , total)
+
 
 
 # -------------------------------------------
@@ -275,7 +281,22 @@ print("-------------------------------------------\n"
 # Hint: Use a counter variable to count attempts.
 
 # Write your code below:
+secret = 17
+tries = 0
 
+guess_number = int(input("Enter a number: "))
+
+while guess_number != secret:
+    tries += 1
+    if guess_number > secret:
+        print("Too high!")
+    else:
+        print("Too low!")
+    guess_number = int(input("Try again: "))
+
+
+tries += 1
+print("Correct! You guessed it in", tries, "tries.")
 
 # -------------------------------------------
 # Submitting Your Work
